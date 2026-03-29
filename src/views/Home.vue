@@ -59,7 +59,7 @@ const projects = ref([
     id: 1,
     title: "Plateforme de Prise de RDV (Type Doctolib)",
     desc: "Conception fullstack d'une application Web et mobile facilitant la prise de rendez-vous pour les artisans. Architecture scalable et sécurité des données.",
-    techs: ["Vue.js", "Ionic", "Node.js", "PostgreSQL", "REST API"],
+    techs: ["Vue.js", "Ionic", "Node.js", "PostgreSQL"],
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=800&q=80", // Image bureau/tech
     link: "#"
   },
