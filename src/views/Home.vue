@@ -107,7 +107,7 @@ const projects = ref([
     id: 7,
     title: "Promotion Hédé-Bazouges",
     desc: "Site web vitrine créé sous WordPress pour attirer les jeunes actifs. Intégration de plugins et optimisation SEO.",
-    techs: ["WordPress", "PHP", "Elementor"],
+    techs: ["WordPress", "Elementor"],
     image: "https://images.unsplash.com/photo-1444723121867-c616969a27ca?auto=format&fit=crop&w=800&q=80",
     link: "#"
   },
