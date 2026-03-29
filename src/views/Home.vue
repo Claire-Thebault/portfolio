@@ -75,7 +75,7 @@ const projects = ref([
     id: 3,
     title: "Analyse de Données : Communes Bretonnes",
     desc: "Application de valorisation de données publiques (Open Data) pour analyser l'attractivité territoriale. Conception BDD et interface de visualisation.",
-    techs: ["Java", "JavaFX", "SQL", "API REST", "Data Viz"],
+    techs: ["Java", "JavaFX", "SQL", "API REST"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", // Image data
     link: "#"
   },
