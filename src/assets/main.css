@@ -1,0 +1,157 @@
+:root {
+  --color-blackout: #0c0a05;       /* Fond très sombre / Texte principal clair */
+  --color-red-bean: #3f0e04;       /* Accents forts / Hover */
+  --color-citrine: #a24112;        /* Boutons secondaires / Détails */
+  --color-dell: #47652b;           /* Couleur principale */
+  --color-gold: #759156;           /* Textes secondaires / Icônes */
+  
+  --color-bg-light: #f4f4f0;       /* Fond des sections claires */
+  --color-bg-dark: #0c0a05;        /* Fond des sections sombres */
+  --color-text-dark: #1a1a1a;
+  --color-text-light: #f4f4f0;
+  
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  
+  --shadow-card: 0 10px 30px rgba(71, 101, 43, 0.15); /* Ombre verte */
+  --radius: 8px;
+  --container-width: 1200px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+/* Utilitaires de mise en page */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  color: var(--color-blackout);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-dell);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* Classes utilitaires pour les sections sombres */
+.bg-dark {
+  background-color: var(--color-blackout);
+  color: var(--color-text-light);
+}
+.bg-dark .section-title { color: var(--color-text-light); }
+.bg-dark .section-title::after { background: var(--color-gold); }
+
+/* BOUTONS */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-dell);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--color-gold);
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+.btn-outline:hover {
+  background: white;
+  color: var(--color-blackout);
+  transform: translateY(-3px);
+}
+
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-blackout);
+}
+.btn-gold:hover {
+  background-color: var(--color-citrine);
+  color: white;
+}
+
+/* --- RESPONSIVE GLOBAL : BOUTONS --- */
+@media (max-width: 768px) {
+  
+  /* Réduction de la taille de police et du padding pour TOUS les boutons */
+  .btn {
+    padding: 0.6rem 1.2rem; /* Réduit de 0.8rem/2rem à 0.6rem/1.2rem */
+    font-size: 0.85rem;     /* Réduit de 0.9rem à 0.85rem */
+    letter-spacing: 0.5px;  /* Réduit légèrement l'espacement des lettres */
+  }
+
+  /* Ajustement spécifique quand les boutons sont empilés (ex: Hero, Modal) */
+  .hero-buttons, 
+  .modal-actions, 
+  .contact-form .btn {
+    gap: 0.8rem; /* Réduit l'espace vertical entre les boutons empilés */
+  }
+
+  /* Si les boutons sont en colonne (width: 100%), on peut réduire encore un peu */
+  .hero-buttons .btn,
+  .modal-actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem 1rem; /* Un peu plus haut pour faciliter le clic au doigt */
+  }
+
+  /* Ajustement pour les petits boutons (tags, icônes) si nécessaire */
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
