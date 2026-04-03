@@ -92,6 +92,22 @@ const closeMenuOnMobile = () => {
 
 .nav-links a:hover { color: var(--color-gold); }
 
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-dell);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 /* --- BURGER BUTTON (Caché sur Desktop) --- */
 .burger-btn {
   display: none;

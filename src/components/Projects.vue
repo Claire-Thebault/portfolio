@@ -222,10 +222,6 @@ const getCardClass = (index) => {
 }
 
 /* --- LOGIQUE DE POSITIONNEMENT 3D --- */
-/* 
-   Nous utilisons des classes dynamiques générées par getCardClass 
-   pour positionner les cartes par rapport à l'index actif.
-*/
 
 /* Carte ACTIVE (Centre) */
 .carousel-card.active {

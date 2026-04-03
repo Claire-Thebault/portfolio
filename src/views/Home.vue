@@ -57,68 +57,44 @@ const navLinks = [
 const projects = ref([
   {
     id: 1,
-    title: "Plateforme de Prise de RDV (Type Doctolib)",
-    desc: "Conception fullstack d'une application Web et mobile facilitant la prise de rendez-vous pour les artisans. Architecture scalable et sécurité des données.",
-    techs: ["Vue.js", "Ionic", "Node.js", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=800&q=80", // Image bureau/tech
+    title: "Segmentation d'Images Médicales",
+    desc: "Projet de recherche appliquée : segmentation et analyse de l'aorte et du cœur pour le diagnostic de pathologies. Utilisation d'outils de traitement d'image.",
+    techs: ["3D Slicer", "Recherche documentaire"],
+    image: "/slicer.png",
     link: "#"
   },
   {
     id: 2,
-    title: "Segmentation d'Images Médicales",
-    desc: "Projet de recherche appliquée : segmentation et analyse de l'aorte et du cœur pour le diagnostic de pathologies. Utilisation d'outils avancés de traitement d'image.",
-    techs: ["3D Slicer", "Python", "Traitement d'image", "Analyse médicale"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80", // Image médicale/scan
+    title: "Plateforme de Prise de RDV (Type Doctolib)",
+    desc: "Conception fullstack d'une application Web et mobile facilitant la prise de rendez-vous pour les artisans. Architecture scalable et sécurité des données.",
+    techs: ["Vue.js", "Ionic", "Node.js", "PostgreSQL"],
+    image: "/BD.png", 
     link: "#"
   },
   {
     id: 3,
-    title: "Analyse de Données : Communes Bretonnes",
-    desc: "Application de valorisation de données publiques (Open Data) pour analyser l'attractivité territoriale. Conception BDD et interface de visualisation.",
-    techs: ["Java", "JavaFX", "SQL", "API REST"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", // Image data
+    title: "Recherche : Élastographie par Ondes de Cisaillement",
+    desc: "Étude approfondie et dossier de recherche sur les techniques d'imagerie médicale par élastographie. Analyse des principes physiques et applications cliniques.",
+    techs: ["Recherche documentaire", "Rédaction scientifique"],
+    image: "elastography.webp", 
     link: "#"
   },
   {
     id: 4,
-    title: "Recherche : Élastographie par Ondes de Cisaillement",
-    desc: "Étude approfondie et dossier de recherche sur les techniques d'imagerie médicale par élastographie. Analyse des principes physiques et applications cliniques.",
-    techs: ["Recherche documentaire", "Physique médicale", "Imagerie", "Rédaction scientifique"],
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80", // Image labo/recherche
+    title: "SportTrack ",
+    desc: "Interface utilisateur moderne pour une application de suivi sportif. Gestion de comptes et visualisation de données JSON.",
+    techs: ["HTML5", "CSS3", "Bootstrap", "JS", "API REST"],
+    image: "/SportTrack.png",
     link: "#"
   },
   {
     id: 5,
-    title: "Attractivité des communes",
-    desc: "Application complète d'analyse de données publiques pour valoriser les communes bretonnes. Conception BDD et interface JavaFX.",
+    title: "Analyse de Données : Communes Bretonnes",
+    desc: "Application de valorisation de données publiques (Open Data) pour analyser l'attractivité territoriale. Conception BDD et interface de visualisation.",
     techs: ["Java", "JavaFX", "MySQL", "CSS"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    image: "/CommunesBretonnes.png", 
     link: "#"
   },
-  {
-    id: 6,
-    title: "SportTrack Interface",
-    desc: "Interface utilisateur moderne pour une application de suivi sportif. Gestion de comptes et visualisation de données JSON.",
-    techs: ["HTML5", "CSS3", "Bootstrap", "JS"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    link: "#"
-  },
-  {
-    id: 7,
-    title: "Promotion Hédé-Bazouges",
-    desc: "Site web vitrine créé sous WordPress pour attirer les jeunes actifs. Intégration de plugins et optimisation SEO.",
-    techs: ["WordPress", "Elementor"],
-    image: "https://images.unsplash.com/photo-1444723121867-c616969a27ca?auto=format&fit=crop&w=800&q=80",
-    link: "#"
-  },
-  {
-    id: 8,
-    title: "Jeu de Wythoff",
-    desc: "Implémentation algorithmique du jeu de Nim variant. Développement d'une IA capable de privilégier les coups gagnants.",
-    techs: ["Java", "Algorithmique", "POO"],
-    image: "https://images.unsplash.com/photo-1610890716271-e7150eaee882?auto=format&fit=crop&w=800&q=80",
-    link: "#"
-  }
 ]);
 
 const selectedProject = ref(null);
@@ -131,7 +107,7 @@ const closeModal = () => {
   selectedProject.value = null;
 };
 
-// --- EXPÉRIENCES (Incluant le futur stage à Montréal) ---
+// --- EXPÉRIENCES ---
 const experiences = ref([
   {
     id: 1,
@@ -139,7 +115,7 @@ const experiences = ref([
     company: "La Technothèque - Centre de réadaptation Marie Enfant",
     location: "Montréal, Canada",
     date: "Juin 2026 - Août 2026 (À venir)",
-    desc: "Conception et optimisation de la plateforme numérique de réadaptation pédiatrique. Architecture de l'information, intégration de ressources multimédias (VR, jeux actifs) et amélioration de l'expérience utilisateur (UX) pour les cliniciens.",
+    desc: "Conception et optimisation de la plateforme numérique de réadaptation pédiatrique. Architecture de l'information, intégration de ressources multimédias (VR, jeux actifs) et amélioration de l'expérience utilisateur pour les cliniciens.",
     techs: ["UX Design", "Architecture de l'information", "Web Dev", "Tests utilisateurs"]
   },
   {
@@ -154,7 +130,7 @@ const experiences = ref([
   {
     id: 3,
     role: "Service Civique & Engagement",
-    company: "Unis-Cité & Mairie de Hédé-Bazouges",
+    company: "Unis-Cité",
     location: "Rennes, France",
     date: "2020 - 2021",
     desc: "Animation en EHPAD, création de jardin partagé et aide aux personnes sans-domicile. Développement fort des soft-skills : empathie, autonomie et travail d'équipe.",

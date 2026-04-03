@@ -30,7 +30,7 @@ defineProps({
 <style scoped>
 .hero {
   height: 100vh;
-  background: url('/2.png') no-repeat center center/cover;
+  background: url('/fond.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: center;

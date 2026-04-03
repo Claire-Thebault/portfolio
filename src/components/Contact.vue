@@ -38,7 +38,7 @@
           
 
           <!-- Si vous ne mettez rien, FormSubmit affichera une page par défaut -->
-          <input type="hidden" name="_next" value="https://claire-thebault.github.io/portfolio/"> 
+          <input type="hidden" name="_next" value="https://claire-thebault.github.io/"> 
 
           <div class="form-group">
             <label for="name">Nom</label>
